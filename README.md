@@ -1,5 +1,7 @@
 # project22
 
+## This project is not working yet, I've only placed it in github to act as a backup repo and to help track issues that I'd like to work on. Everything beyond this point in this document is stock material provided by jekyll. I will update it once I've completed this project. There is no gem, there is no theme... yet.
+
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
 TODO: Delete this and the text above, and describe your gem

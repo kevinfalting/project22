@@ -1,0 +1,57 @@
+// Edit html classes and id's here
+
+.previous_page {
+	display: block;
+	position: fixed;
+	clear: left;
+	float: left;
+	height: 100vh;
+	width: 20%;
+	text-align: center;
+
+	a {
+		display: block;
+	    width: 100%;
+	    height: 100%;
+	}
+
+	&:hover {
+		background-color: $page_navigation_color;
+	}
+}
+
+.next_page {
+	display: block;
+	right: 0;
+	position: fixed;
+	height: 100vh;
+	width: 20%;
+	text-align: center;
+
+	a {
+		display: block;
+	    width: 100%;
+	    height: 100%;
+	}
+
+	&:hover {
+		background-color: $page_navigation_color;
+	}
+}
+
+.book_wrap {
+	width: 60%;
+	margin-left: 20%;
+}
+
+.page_content {
+	text-align: justify;
+	margin: 1em;
+}
+
+.cover_image {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	max-height: 90vh;
+}

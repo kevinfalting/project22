@@ -1,0 +1,14 @@
+---
+# this is the main scss file
+---
+
+// charset
+@charset "utf-8";
+
+// site variables
+$background_color: #F0EADA;
+$text_color: #262524;
+$page_navigation_color: rgba(100, 100, 100, 0.1);
+
+// import partials from the `project22` theme
+@import "project22";

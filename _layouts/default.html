@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% comment %}<!-- Creating an array of all of the pages in order by title -->{% endcomment %}
+    {% assign ordered_pages = site.pages | sort:"title" %}
+
+    {% comment %}<!-- Convert Page Title to an Integer -->{% endcomment %}
+    {% assign page_title = page.title | plus: 0 %}
+
+    {% if page_title > 1 %}
+      <div class="previous_page">
+        <a href="../pages/{{ page_title | minus: 1 }}.html">&laquo; Previous Page</a>
+      </div>
+    {% endif %}
+
+    {% if page_title == 1 %}
+      <div class="previous_page">
+        <a href="/">&laquo; Cover</a>
+      </div>
+    {% endif %}
+
+    {% if page_title != ordered_pages.last.title %}
+      <div class="next_page">
+        <a href="../pages/{{ page_title | plus: 1 }}.html">Next Page &raquo;</a>
+      </div>
+    {% endif %}
+
+    {% include header.html %}
+
+    <main>
+      <div>
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

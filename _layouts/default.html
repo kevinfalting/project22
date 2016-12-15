@@ -29,6 +29,12 @@
       </div>
     {% endif %}
 
+    {% if page_title == ordered_pages.last.title %}
+      <div class="next_page">
+        <a href="{{ site.baseurl }}/">Cover</a>
+      </div>
+    {% endif %}
+
     {% include header.html %}
 
     <main>

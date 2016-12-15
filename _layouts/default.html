@@ -13,19 +13,19 @@
 
     {% if page_title > 1 %}
       <div class="previous_page">
-        <a href="../pages/{{ page_title | minus: 1 }}.html">&laquo; Previous Page</a>
+        <a href="{{ site.baseurl }}/pages/{{ page_title | minus: 1 }}.html">&laquo; Previous Page</a>
       </div>
     {% endif %}
 
     {% if page_title == 1 %}
       <div class="previous_page">
-        <a href="/">&laquo; Cover</a>
+        <a href="{{ site.baseurl }}/">&laquo; Cover</a>
       </div>
     {% endif %}
 
     {% if page_title != ordered_pages.last.title %}
       <div class="next_page">
-        <a href="../pages/{{ page_title | plus: 1 }}.html">Next Page &raquo;</a>
+        <a href="{{ site.baseurl }}/pages/{{ page_title | plus: 1 }}.html">Next Page &raquo;</a>
       </div>
     {% endif %}
 

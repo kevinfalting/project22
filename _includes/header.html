@@ -1,6 +1,6 @@
 <nav>
 	<div>
-	<a href="/">Cover</a>
+	<a href="{{ site.baseurl }}/">Cover</a>
 	{% assign ordered_pages = site.pages | sort:"title" %}
 	{% for page in ordered_pages %}
 
@@ -8,4 +8,6 @@
 
 	{% endfor %}
 	</div>
+
+	<o>This is the page.url: {{ page.url }}</o>
 </nav>
